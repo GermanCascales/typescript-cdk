@@ -1,0 +1,23 @@
+{
+    "name": "express-webserver",
+    "version": "1.0.0",
+    "description": "",
+    "main": "",
+    "scripts": {
+        "build:ts": "tsc",
+        "docker:build": "docker build -t express-webserver .",
+        "docker:run": "docker run -p 8080:8080 -e SERVER_PORT=8080 -e API_BASE=https://kxss0aqr1d.execute-api.eu-north-1.amazonaws.com -d express-webserver"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^1.4.0",
+        "ejs": "^3.1.9",
+        "express": "^4.18.2"
+    },
+    "devDependencies": {
+        "@types/express": "^4.17.17",
+        "@types/node": "^20.5.6",
+        "typescript": "^5.2.2"
+    }
+}
