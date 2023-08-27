@@ -6,7 +6,9 @@
     "scripts": {
         "build:ts": "tsc",
         "docker:build": "docker build -t express-webserver .",
-        "docker:run": "docker run -p 8080:8080 -e SERVER_PORT=8080 -e API_BASE=https://kxss0aqr1d.execute-api.eu-north-1.amazonaws.com -d express-webserver"
+        "docker:run": "docker run -p 8080:8080 -e SERVER_PORT=8080 -e API_BASE=https://yakpd0sgg4.execute-api.eu-north-1.amazonaws.com -d express-webserver",
+        "podman:build": "podman build -t express-webserver .",
+        "podman:run": "podman run -p 8080:8080 -e SERVER_PORT=8080 -e API_BASE=https://yakpd0sgg4.execute-api.eu-north-1.amazonaws.com -d express-webserver"
     },
     "author": "",
     "license": "ISC",
